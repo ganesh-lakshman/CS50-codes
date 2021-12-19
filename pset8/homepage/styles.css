@@ -1,0 +1,75 @@
+            form
+            {
+                text-align: center;
+
+            }
+            h1
+            {
+                text-align: center;
+
+            }
+            .rolls
+            {
+                text-align: center;
+                font-family: sans-serif;
+            }
+            #result
+            {
+                text-align: center;
+                font-style: italic;
+                font-weight: bold;
+                font-size: 1.875em;
+            }
+            .h1i
+            {
+                background-color:DodgerBlue;
+                text-align: center;
+            }
+            #intro
+            {
+                font-size: 1.875em;
+                border-style: solid;
+                background-color:Tomato;
+            }
+            .rh1
+            {
+                text-align: center;
+            }
+            table
+            {
+                font-size: 1.5em;
+                text-align: center;
+                border:1px solid black;
+                border-collapse:collapse;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            td
+            {
+                font-size: 1.5em;
+                border:1px solid black;
+                padding:5px;
+            }
+            th
+            {
+                font-size: 1.5em;
+                border:1px solid black;
+            }
+            .rp
+            {
+                background-color: MediumSeaGreen;
+                font-size: 1.875em;
+                border-style: solid;
+            }
+                        .a
+            {
+                background-color: SlateBlue;
+                font-size: 1.5em;
+                border-style: solid;
+            }
+            .g
+            {
+                background-color:LightGray;
+                font-size: 1.6em;
+                border-style: solid;
+            }

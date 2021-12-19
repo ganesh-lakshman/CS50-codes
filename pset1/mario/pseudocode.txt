@@ -1,0 +1,7 @@
+start the program
+prompt the user to give the input between 0 and 9
+then write seperate blocks of code for each step
+1) print spaces first
+2) then print hashes
+3) print new line
+repeat theese steps with required condition

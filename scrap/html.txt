@@ -1,0 +1,19 @@
+hyper text reference
+a for anchor tag
+h1 to h6 for different types of titles
+tr is table row
+td is table data
+http-server
+https://www.google.com/search?q=cats
+inline styling/style section in header/different css file
+multiple classes for a single element
+1px solid black/5px dotted blue
+instead of td amd using classes for head row we can use th
+bootstrap is a css library it has already written css code
+getbootstrap.com
+document object model(DOM) treee like representation of html
+id is unique identifier for reference of html can be used in any tag
+document.querySelector('#name').value; look for something inside my html page that
+has an id of name
+form has input subtag and input tag has type,id attribute which has text submit value
+only one element should have a given id but classes are the name says it all

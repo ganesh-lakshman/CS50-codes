@@ -1,0 +1,92 @@
+requested an api to get data from other website
+intially every user has 10000
+CREATE TABLE IF NOT EXISTS 'users' ('id' INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 'username' TEXT NOT NULL, 'hash' TEXT NOT NULL, 'cash' NUMERIC NOT NULL DEFAULT 10000.00 );
+CREATE TABLE IF NOT EXISTS 'buy' ('id' INTEGER NOT NULL, 'symbol' TEXT NOT NULL, 'price' NUMERIC NOT NULL, 'shares' INTEGER NOT NULL,'total' NUMERIC NOT NULL);
+CREATE TABLE IF NOT EXISTS 'sell' ('id' INTEGER NOT NULL, 'symbol' TEXT NOT NULL, 'price' NUMERIC NOT NULL, 'shares' INTEGER NOT NULL,'total' NUMERIC NOT NULL);
+CREATE TABLE IF NOT EXISTS 'shares' ('id' INTEGER NOT NULL, 'symbol' TEXT NOT NULL, 'shares' INTEGER NOT NULL, 'cash' NUMERIC NOT NULL, 'value' INTEGER NOT NULL, timestamp DATETIME DEFAULT CURRENT_TIMESTAMP);
+
+username and password cannot be same
+SELECT GETDATE();
+
+ALTER TABLE shares
+ADD timestamp DATETIME;
+
+timestamp = db.execute("SELECT GETDATE()")
+
+ALTER TABLE shares DROP COLUMN timestamp;
+CREATE TABLE whatever(
+     ....
+     timestamp DATE DEFAULT (datetime('now','localtime')),
+     ...
+);
+CREATE TABLE sqlite_sequence(name,seq);
+CREATE UNIQUE INDEX 'username' ON "users" ("username");
+check_password_hash(rows[0]["hash"], request.form.get("password"))....And notice how it uses check_password_hash to compare hashes of users’ passwords
+ # User reached route via GET (as by clicking a link or via redirect)
+    else:
+        return render_template("login.html")
+diff b/w get and post can be understood by above post means when we post something and click to the website
+in register we take username input insert use sql if alread exists apology
+password blank or donot match apology...pasword==confirmaton
+generate_password_hash
+export API_KEY=pk_5456d5117de24a7fb4b9df6e9172f229
+within a route we can render any number of templates
+Finally, notice how login “remembers” that a user is logged in by storing his or her user_id, an INTEGER, in session.
+table id companyname symbol shares price of the shares total spent remaining
+what stock who bought how many shares
+CREATE TABLE IF NOT EXISTS 'buy' ('id' INTEGER NOT NULL, 'symbol' TEXT NOT NULL,
+'price' NUMERIC NOT NULL, 'shares' INTEGER NOT NULL,'total' NUMERIC NOT NULL);
+cash is remainig cash after boughti.e take out from previous value
+
+CREATE TABLE IF NOT EXISTS 'sell' ('id' INTEGER NOT NULL, 'symbol' TEXT NOT NULL,
+'price' NUMERIC NOT NULL, 'shares' INTEGER NOT NULL,'total' NUMERIC NOT NULL);
+cash is remaining after sold i.e add to previous value
+index just shows how many stocks that wee currently own
+index page symbol name shares current price total
+cash............10000 initial
+
+CREATE TABLE IF NOT EXISTS 'shares' ('id' INTEGER NOT NULL, 'symbol' TEXT NOT NULL,
+'shares' INTEGER NOT NULL, 'cash' NUMERIC NOT NULL, 'value' INTEGER NOT NULL );
+whenever we create empty object we have to append but not traverse*****
+def password_check(password):
+    """
+    Verify the strength of 'password'
+    Returns a dict indicating the wrong criteria
+    A password is considered strong if:
+        8 characters length or more
+        1 digit or more
+        1 symbol or more
+        1 uppercase letter or more
+        1 lowercase letter or more
+    """
+
+    # calculating the length
+    length_error = len(password) < 8 and len(password) > 12
+
+    # searching for digits
+    digit_error = re.search(r"\d", password) is None
+
+    # searching for uppercase
+    uppercase_error = re.search(r"[A-Z]", password) is None
+
+    # searching for lowercase
+    lowercase_error = re.search(r"[a-z]", password) is None
+
+    # searching for symbols
+    symbol_error = re.search(r"[ !#$%&'()*+,-./[\\\]^_`{|}~"+r'"]', password) is None
+
+    # overall result
+    password_ok = not ( length_error or digit_error or uppercase_error or lowercase_error or symbol_error )
+
+    return {
+        'password_ok' : password_ok,
+        'length_error' : length_error,
+        'digit_error' : digit_error,
+        'uppercase_error' : uppercase_error,
+        'lowercase_error' : lowercase_error,
+        'symbol_error' : symbol_error,
+    }
+INSERT INTO product (name, price, description)
+VALUES ('book', '50', 'A book is a medium for recording information in the form of writing or images, typically composed of many pages bound together and protected by a cover.'), ('pen', '5', 'A pen is a common writing instrument used to apply ink to a surface, usually paper, for writing or drawing.'), ('pencil', '3', 'A pencil is an implement for writing or drawing, constructed of a narrow, solid pigment core in a protective casing that prevents the core '), ('condom', '70', 'Condoms work by keeping semen (the fluid that contains sperm) from entering the vagina. The male condom is placed on the penis when it becomes erect.'), ('bat', '1000', 'A cricket bat is simply equipment made from wooden pieces used by a sportsperson in the cricket sport to hit the ball. '), ('ball', '20', 'A cricket ball is a hard, solid ball used to play cricket. A cricket ball consists of a cork core wound with string then a leather cover stitched on');
+
+        

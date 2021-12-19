@@ -1,0 +1,12 @@
+bool  True False
+int
+float
+str
+range  sequenve of nums
+list    sequence of mutable values
+tuple   sequence of immutable values
+dict   collection of keys and values(key value pairs) hashtables
+set   collection of unique values onething exits on;y once
+cp ~/pset4/filter/images/yard.bmp .
+input returns string
+int()->casting

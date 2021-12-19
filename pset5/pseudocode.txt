@@ -1,0 +1,33 @@
+text is the file you wish to spell-check.
+./speller dictionaries/small text
+./speller texts/lalaland.txt
+where dictionary is assumed to be a file containing a list of lowercase words, one per line, and text is a file to be spell-checked.
+/WORDS MISSPELLED:     1272
+WORDS IN DICTIONARY:  71546
+WORDS IN TEXT:        17756
+TIME IN load:         0.02
+TIME IN check:        0.01
+TIME IN size:         0.00
+TIME IN unload:       0.01
+TIME IN TOTAL:        0.04/my output
+
+/WORDS MISSPELLED:     955
+WORDS IN DICTIONARY:  143091
+WORDS IN TEXT:        17756
+TIME IN load:         0.03
+TIME IN check:        0.01
+TIME IN size:         0.00
+TIME IN unload:       0.01
+TIME IN TOTAL:        0.05/actual output
+
+
+/WORDS MISSPELLED:     1720
+WORDS IN DICTIONARY:  143091
+WORDS IN TEXT:        17756
+TIME IN load:         0.02
+TIME IN check:        0.01
+TIME IN size:         0.00
+TIME IN unload:       0.01
+TIME IN TOTAL:        0.05/ my output 2
+
+dont have to worry about load, hash and size

@@ -1,0 +1,21 @@
+to create dynammic html instead of static
+application.py is coventional
+app is a variable which represent flask application
+framework is where we can build software platform
+wsgi web server gateway interface
+we have to include routes to application.py
+routes end of the url what page we have to visit /search / settings...
+every route is associated with a function
+/ is default route
+flask run
+7 lines flask web application
+flask allows us to seperate into template files
+{{ }} jinja templating language flask uses to render
+
+we have to add an attribute to <input> in order access with flask
+when user submit the form in index.html they will be taken to hello route
+hello route looks at the request name arg of the request
+we can connect sql with flask
+Before getting started on this assignment, we’ll need to register for an API key in order to be able to query IEX’s data. To do so, follow these steps:
+pk_5456d5117de24a7fb4b9df6e9172f229
+export API_KEY=pk_5456d5117de24a7fb4b9df6e9172f229

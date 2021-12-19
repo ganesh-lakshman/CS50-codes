@@ -1,0 +1,7 @@
+its basically c myaan!
+document.querySelector('#name').value; look for something inside my html page that
+has an id of name
+we can update document object model using javascript in addition to access content
+html+js+css
+java script console in devoloper tools is the good place to look for debugging
+slect creates a dropdown

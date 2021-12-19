@@ -1,0 +1,59 @@
+sqlite3 responses.db
+SQLite version 3.22.0 2018-01-22 18:45:57
+Enter ".help" for usage hints.
+sqlite> .mode csv
+sqlite> .import "Team Kanyarasi (Responses) - Form Responses 1.csv" response
+.import FILE TABLE
+sqlite> .schema
+CREATE TABLE response(
+  "Timestamp" TEXT,
+  "Email Address" TEXT,
+  "How often do you travel at night?" TEXT,
+  "what do you think the main reason behind accidents?" TEXT,
+  "How often do you find yourself or people violating traffic rules?" TEXT,
+  "How often do you forget to put on signal lights?" TEXT,
+  "How to often to cross other lanes without signal lights or horns?" TEXT,
+  "Our project reduces road accidents, How much relevant do you find our project in your daily life?" TEXT,
+  "Do you have any expectations on this product that would help to make your driving experience better?" TEXT,
+  "What are the road safety problems you faced previously?" TEXT,
+  "How often do you travel on national highways?" TEXT,
+  "Are the roads that you travel separated by road markings?" TEXT,
+  "We are thinking that this product will make no big difference in buying your vehicle, how far will you consider having this device on your vehicle? " TEXT,
+  "which vehicle are you using?" TEXT,
+  "Does your vehicle contain any safety gears already. if yes what are they? " TEXT,
+  "Do you find this survey useful and would you like to fund our project?" TEXT
+); this is alll happended autmatically whe we imported data into response table
+select [Email Address] from response;
+select [Email Address] from response order by [Email Address];
+select [Email Address], count([Email Address]) from response group by [Email Address] limit 10;
+Email Address | count([Email Address])
+sqlite> select [Email Address], count([Email Address]) as n from response group by [Email Address] order by n desc limit 10;
+
+csv's are weakest form of data so we use relational databases
+
+CREATE
+READ
+UPDATE
+DELETE
+
+table is nothing but a sheet
+CREATE TABLE table (columname type, ....);
+BLOB binary large object
+INTEGER   smallint integer bigint
+NUMERIC   boolean date time timestamp numeric(sacle, precision)
+REAL real double precision
+TEXT char(n) varchar(n) text
+INSERT INTO table(column, ...) VALUES(value,...);
+AVG COUNT DISTINCT MAX MIN...
+SELECT DISTINCT([Email Address]) FROM response;
+WHERE LIKE GROUP BY ORDER BY JOIN
+SELECT [Email Address] from response where [Email Address] = "ganeshamara2000@gmail.com";
+SELECT count([Email Address]) from response where [Email Address] like  "%ganesh%m";
+sqlite> SELECT [Email Address] from response where [Email Address] like  "%p%";
+update response set [Email Address] = "ganeshlakshman00@gmail.com" where [Email Address] like "%ganesh%";
+delete from response where [Email Address] = "srinu@gmail.com";
+order by desc
+joinimg two tables
+select col1 , col2 from table1
+join table2
+on table.1col1 = table2.col3;

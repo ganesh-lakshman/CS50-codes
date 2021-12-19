@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Project Kanyaraasi!</title>
+        <script>
+            function check()
+            {
+                let name = document.querySelector('#Roll').value;
+                if (name === "408"||name === "406"||name === "417"||name === "418")
+                {
+                    alert("hello, " + name + "!");
+                }
+                document.querySelector('#result').innerHTML = "Hello, " + name + "!";
+            }
+        </script>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="radio" name="options" id="option1" checked> Page 1
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option2"> Page 2
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option3"> Page 3
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option3"> Page 4
+  </label>
+</div>
+        <br>
+        <h1>Team Kanyaraasi</h1>
+        <br>
+        <form onsubmit="check(); return false;">
+            <input type="text" id="Roll">
+            <input type="submit" value="Enter Your Roll";>
+        </form>
+        <div class="rolls">19131A0406<br>19131A0408<br>19131A0416<br>19131A0417<br>19131A0418<br>19131A0457</div>
+        <br>
+<div id="result">Hello World! </div>
+<div class="alert alert-primary" role="alert">
+    Go to any page you like by clicking the buttons below
+</div>
+
+<a href="index.html">
+    <button id="one">1</button>
+</a>
+<a href="introduction.html">
+    <button id="two">2</button>
+</a>
+<a href="research.html">
+    <button id="three">3</button>
+</a>
+<a href="codebook.html">
+    <button id="4">4</button>
+</a>
+<script>
+/*    document.querySelector('one').onclick = function(){
+                document.querySelector("#btn").button('dispose');
+            }*/
+</script>
+
+    </body>
+</html>

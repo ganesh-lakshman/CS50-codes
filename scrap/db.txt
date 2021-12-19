@@ -1,0 +1,22 @@
+cookies data which is asked by a website to the web browser
+login credentials
+evry user can access data unless we make global variables to local
+sessions
+CREATE TABLE 'registrants' (
+   ...> 'id' INTEGER PRIMARY KEY,
+   ...> 'name' VARCHAR(255),
+   ...> 'email' VARCHAR(255)
+   ...> )
+   ...> ;
+sqlite> .schema
+CREATE TABLE IF NOT EXISTS 'registrants' (
+'id' INTEGER PRIMARY KEY,
+'name' VARCHAR(255),
+'email' VARCHAR(255)
+);
+sqlite> SELECT * from registrants
+   ...> ;
+sqlite> INSERT INTO registrants (name, email) VALUES ('ganesh', 'ganeshamara200@gmail.com');
+sqlite> ;sqlite> SELECT * from registrants;
+id | name | email
+1 | ganesh | ganeshamara200@gmail.com
